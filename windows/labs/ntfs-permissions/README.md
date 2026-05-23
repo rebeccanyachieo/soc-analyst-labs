@@ -91,6 +91,15 @@ In this project, I configured Windows file sharing and NTFS permissions to enfor
 
 Misconfigured permissions can allow unauthroized users to access sensitive data. By removing default groups and disabling inheritance, I made sure that only those groups who needed to access HR group had access. This is important in the real world where sensitive data like employee records must be protected. 
 
+## MITRE ATT&CK Mapping
+
+| Tactic | Technique | ID | Relation |
+|---|---|---|---|
+| Defense Evasion | File and Directory Permissions Modification | T1222 | Attackers may modify NTFS permissions to maintain or expand access |
+| Lateral Movement | SMB/Windows Admin Shares | T1021.002 | Shared folders can be abused for remote access and movement |
+| Discovery | Permission Groups Discovery | T1069 | Attackers may enumerate users and groups to identify accessible resources |
+| Collection | Data from Network Shared Drive | T1039 | Misconfigured shares may expose sensitive company files |
+
 ## Key Takeaways
 - Learned the difference between share and NTFS permissions
 - Practiced applying least privilege
