@@ -223,7 +223,7 @@ Multiple matches may indicate hijack potential
 |---|---|---|
 |Hijack Execution Flow | T1574 | Malicious executables can abuse Windows search order precedence |
 |Command and Scripting Interpreter | T1059 | Commands are executed through CMD during the hijack scenerio |
-|System Information discovery | T1082 | Attackers may use hijacked binaries to gather system/network information |
+|System Information discovery | T1082 | Attackers may use hijacked binaries to get system/network information |
 
 # Key Takeaways
 
