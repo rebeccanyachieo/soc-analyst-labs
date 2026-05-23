@@ -84,11 +84,3 @@ Tactic: Credential Access
 | Technique | ID | Description |
 |---|---|---|
 | Brute Force (Password Guessing) | T1110.001 | Repeated authentication attempts against a valid account over RDP to identify correct credentials |
-
-## Takeaway
-
-This investigation confirms that repeated failed login attempts from a single source can be:
-
-- Clearly identified in Windows Security logs 
-- Grouped by source IP  
-- Measured against a defined threshold  
