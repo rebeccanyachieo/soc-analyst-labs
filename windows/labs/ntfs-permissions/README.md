@@ -1,7 +1,7 @@
 # NTFS Permissions Lab
 
 ## Objective
-To practice setting up file sharing and permissions in Windows.
+Configure Windows shared folders and NTFS permissions using least privilege principles to understand how improper access control can expose sensitive data.
 
 ## Tools Used
 - HackTheBox Academy (Lab Environment)
