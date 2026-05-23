@@ -13,6 +13,7 @@ It is critical to system security because it manages user credentials in memory,
 
 ## Tools Used
 - Task Manager
+- Process Explorer (Sysinternals)
 
 ## Environment
 - Windows 11 (local system)
@@ -53,6 +54,20 @@ Suspicious scenerio:
 
 These deviations may indicate masquerading malware or unauthorized access attempts and should be investigated further.
 
+## MITRE ATT&CK MAPPING
+
+| Technique | ID | Description |
+| --- |---|---|
+| OS Credential Dumping | T1003 | Attackers attempt to obtain account login credentials from the operating system |
+|LSASS Memory | T1003.001 | Attackers may dump LSASS memory to extract credentials |
+
+## Detection Opportunities
+
+- Monitor for processes attempting to access LSASS memory
+- Investigate unsigned processes interacting with lsass.exe
+- Alert on duplicate lsass.exe instances
+- Investigate lsass.exe executing outside System32
+  
 ## Key Takeaways
 - Verify both process path and parent process to detect anomalies
 - Multiple instances of LSASS should be treated as a high-priority alert
