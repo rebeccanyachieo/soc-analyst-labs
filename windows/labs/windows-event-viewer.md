@@ -47,9 +47,3 @@ Monitoring log access is critical for detecting reconnaissance activity
 - Alert on PowerShell accessing logs outside of normal admin workflows
 - Monitor for excessive log enumeration from a single account
   
-## Key Takeaways
-- Not all log access is benign
-- Context (who, when, how) determines if activity is suspicious
-- Analysts must distinguish normal admin behavior from malicious intent
-An analyst should correlate log access events with user roles and timing.
-For example, PowerShell logs accessed outside normal admin hours could indicate reconnaissance or credential harvesting.
