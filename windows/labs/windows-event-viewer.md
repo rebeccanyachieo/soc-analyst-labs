@@ -11,7 +11,7 @@ Explain what normal and abnormal behavior looks like in Windows Event Viewer and
 What is normal
 - System activity without suspicious processes
 - Logs accessed by authorized users
-- Expected API usage patterns
+- Expected log access behavior by administrators and system processes
 - Examples
   - Viewing logs through Event Viewer normally
   - Using:
@@ -23,12 +23,12 @@ What is normal
     - record count
 What is abnormal
 - Unauthorized or unusual log access
-- Attempts to view sensitive information
+- Attempts to enumerate logs, identify user activity, or gather system information
 - Unexpected access patterns
 - Examples
   - Accessings logs to gather usernames or credentials
   - Access from unusual accounts or times
-# Why This Matters (SOC Perspective)
+## Why This Matters (SOC Perspective)
 Event Viewer contains:
 - System activity
 - User behavior
@@ -40,7 +40,14 @@ If misused, it can
 
 Monitoring log access is critical for detecting reconnaissance activity
 
-# Key Takeaways
+## Potential Detection Ideas
+
+- Monitor for unusual use of wevtutil.exe
+- Investigate log clearing activity
+- Alert on PowerShell accessing logs outside of normal admin workflows
+- Monitor for excessive log enumeration from a single account
+  
+## Key Takeaways
 - Not all log access is benign
 - Context (who, when, how) determines if activity is suspicious
 - Analysts must distinguish normal admin behavior from malicious intent
