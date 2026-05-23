@@ -77,6 +77,13 @@ Key observations:
 This validates that repeated authentication failures are both visible and measurable using standard Windows Security logs.
 
 ---
+## MITRE ATT&CK Mapping
+
+Tactic: Credential Access
+
+| Technique | ID | Description |
+|---|---|---|
+| Brute Force (Password Guessing) | T1110.001 | Repeated authentication attempts against a valid account over RDP to identify correct credentials |
 
 ## Takeaway
 
