@@ -40,7 +40,7 @@ If misused, it can
 
 Monitoring log access is critical for detecting reconnaissance activity
 
-## Potential Detection Ideas
+## Potential Detection Opportunities
 
 - Monitor for unusual use of wevtutil.exe
 - Investigate log clearing activity
