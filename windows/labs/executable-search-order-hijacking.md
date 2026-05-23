@@ -1,6 +1,6 @@
-# Executable Search Order Hijacking
+## Executable Search Order Hijacking
 
-# Objective
+## Objective
 
 Demonstrate how Windows executes a malicious executable when it appears earlier in the executable search order, and distinguish between:
 
@@ -8,13 +8,13 @@ Demonstrate how Windows executes a malicious executable when it appears earlier 
     
     - %PATH%-based Hijacking
 
-# Tools and Environment
+## Tools and Environment
 
     - Command Prompt (CMD)
     
     - Windows OS (user-level access)
 
-# Steps
+## Steps
 
 1. Create a controlled directory
 
@@ -40,7 +40,7 @@ Rename:
 
 This creates a fake executable mimicking a trusted system binary.
 
-# Testing & Analysis
+## Testing & Analysis
 
 Step 1: Confirm legitimate executable
 
@@ -145,11 +145,11 @@ Expected:
     
   <img width="647" height="397" alt="ipconfig-baseline" src="https://github.com/user-attachments/assets/092a8955-851f-44a8-b7a8-53f26d587570" />
 
-# Core Insight
+## Core Insight
 
     Command execution is determined by search order precedence, not just %PATH% ordering.
 
-# Security Implications
+## Security Implications
 
 1. Current Directory Hijacking (High Risk)
 
@@ -169,7 +169,7 @@ Requires:
 
     Favorable ordering
 
-# Real-World Example
+## Real-World Example
 
 If a user navigates into a compromised directory and runs:
 
@@ -177,7 +177,7 @@ If a user navigates into a compromised directory and runs:
 
 A malicious ping.exe in that directory will execute instead of the legitimate binary.
 
-# Mitigation
+## Mitigation
 
     Avoid running commands in untrusted directories
 
@@ -187,7 +187,7 @@ A malicious ping.exe in that directory will execute instead of the legitimate bi
 
     Monitor working directory context in scripts
 
-# Detection Perspective (SOC)
+## Detection Perspective (SOC)
 
 Indicators of Compromise:
 
@@ -225,7 +225,7 @@ Multiple matches may indicate hijack potential
 |Command and Scripting Interpreter | T1059 | Commands are executed through CMD during the hijack scenerio |
 |System Information discovery | T1082 | Attackers may use hijacked binaries to get system/network information |
 
-# Key Takeaways
+## Key Takeaways
 
     Windows checks the current directory before %PATH%
 
