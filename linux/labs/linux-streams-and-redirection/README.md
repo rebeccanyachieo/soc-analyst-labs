@@ -82,6 +82,3 @@ Understanding Linux streams is useful for:
 - troubleshooting
 - command-line automation
 
-# Key Takeaway
-This lab helped reinforce how Linux programs communicate through streams and how shell redirection can be used to control and process output efficiently. 
-These concepts are commonly used when filtering logs, troubleshooting scripts, and processing command-line output during investigations.
