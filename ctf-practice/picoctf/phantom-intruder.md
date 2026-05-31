@@ -38,9 +38,6 @@ Located Base64-like strings across multiple packets using Wireshark's search. Ve
 ### 4. Decode
 Extracted and reassembled the Base64 fragments in sequence.
 
-<img width="800" height="800" alt="04 extracted-base64-data" src="https://github.com/user-attachments/assets/5d52fad1-d5ce-4de3-9129-ffe88bf30306" />
-
-
 Then I decoded them in CyberChef using **From Base64** and got the flag.
 
 ---
