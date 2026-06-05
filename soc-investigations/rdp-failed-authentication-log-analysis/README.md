@@ -39,29 +39,40 @@ If a source IP generates ≥5 failed authentication attempts within 15 minutes, 
 
 <img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/3e756c3b-fc97-428b-a250-701d65229c06" />
 
+## Verification in Splunk
+
+After deploying Splunk Enterprise and configuring log forwarding, I verified that Event ID 4625 security events were successfully ingested from the Windows endpoint.
+
+Search Query:
+EventCode=4625
+
+The events appeared in Splunk with the expected account name, source IP address, and logon type fields, confirming successful log collection and centralization.
+
 ### Key Event Details
 
 - **Event ID:** 4625 (failed login)
 - **Account Name:** user
-- **Source Network Address:** 192.168.56.101 (Kali VM)
+- **Source Network Address:** 192.168.x.x (Kali VM)
 - **Logon Type:** 3 (network-based login attempt)
+- **Event Source:** Windows Security Log
+- **Platform:** Splunk Enterprise
 
 ### Observed Pattern
 
 - 6 failed login attempts
 - Same source IP across all events
-- Occurred within approximately 15 minutes
+- Occurred within a short time window
 
 ### Sample Events
 
 | Time         | Event ID | Account | Source IP     | Logon Type |
 |--------------|----------|---------|---------------|------------|
-| 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:26 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:25 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:23 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:20 PM   | 4625     | user    | 192.168.56.101   | 3          |
-| 3:32:13 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:27 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:26 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:25 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:23 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:20 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:13 PM   | 4625     | user    | 192.168.x.x   | 3          |
 
 ## Analysis
 
