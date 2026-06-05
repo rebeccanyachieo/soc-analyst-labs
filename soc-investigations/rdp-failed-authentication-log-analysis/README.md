@@ -31,7 +31,7 @@ These repeated failures generate security events that can be analyzed to underst
 Repeated failed authentication attempts from a single source IP should be observable and quantifiable within a defined time window.
 
 **Test condition:**
-If a source IP generates ≥5 failed authentication attempts within 15 minutes, it should be clearly visible and traceable in Windows Security logs.
+If a source IP generates ≥5 failed authentication attempts within a short time window, it should be clearly visible and traceable in Windows Security logs.
 
 ---
 
