@@ -37,7 +37,7 @@ If a source IP generates ≥5 failed authentication attempts within a short time
 
 ## Evidence
 
-<img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/3e756c3b-fc97-428b-a250-701d65229c06" />
+<img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/7672b10c-d359-45a9-9e96-9201587ea0fe" />
 
 ## Verification in Splunk
 
