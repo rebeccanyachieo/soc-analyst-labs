@@ -6,7 +6,7 @@ This project demonstrates a home SIEM environment built with Splunk Enterprise, 
 
 ## Architecture
 
-<img width="600" height="300" alt="soc-lab-diagram" src="https://github.com/user-attachments/assets/7e162a9d-4e5b-4877-83a2-1fab968fa207" />
+<img width="600" height="500" alt="soc-lab-diagram" src="https://github.com/user-attachments/assets/7e162a9d-4e5b-4877-83a2-1fab968fa207" />
 
 
 ## Technologies Used
