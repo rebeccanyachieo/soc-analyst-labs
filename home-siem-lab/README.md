@@ -46,6 +46,14 @@ This project demonstrates SIEM deployment and administration, log collection and
 - User Creation Investigation
 - Privileged Logon Investigation
 
+## Demonstration
+
+Video walkthrough showing:
+- Splunk receiving Windows Security logs
+- Event ID 4625 detection
+
+[Watch the Video Walkthrough](https://youtu.be/IeqjduHlj-o?si=UKToO-8ybwSuQFqZ)
+  
 ## Learning Methodology
 
 During the project, I used documentation, lab experimentation, Event Viewer, Splunk, and AI-assisted learning tools to understand Windows security events, validate configurations, and troubleshoot issues. All log generation, system configuration, and investigation steps were performed within my lab environment.
