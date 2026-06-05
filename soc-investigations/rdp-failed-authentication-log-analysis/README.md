@@ -50,7 +50,7 @@ EventCode=4625
 
 The events appeared in Splunk with the expected account name, source IP address, and logon type fields, confirming successful log collection and centralization.
 
-<img width="850" height="500" alt="splunk-event-details-4625" src="https://github.com/user-attachments/assets/4bae2335-5bc6-4b25-993f-c07d482b6861" />
+<img width="850" height="550" alt="splunk-event-details-4625" src="https://github.com/user-attachments/assets/4bae2335-5bc6-4b25-993f-c07d482b6861" />
 
 
 ### Key Event Details
