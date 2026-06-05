@@ -25,7 +25,8 @@ EventCode=4720
 
 The event was successfully forwarded to Splunk Enterprise, verifying that the account creation activity was being collected and centralized for monitoring and analysis. 
 
-<img width="800" height="550" alt="splunk-4720-search-results" src="https://github.com/user-attachments/assets/71e16d0c-293f-406b-81d1-dd0a42db38c3" />
+<img width="800" height="600" alt="splunk-4720-search-results" src="https://github.com/user-attachments/assets/31363c59-9b1e-4598-89ce-3b18896750fd" />
+
 
 # MITRE ATT&CK Mapping
 
