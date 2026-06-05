@@ -46,9 +46,11 @@ After deploying Splunk Enterprise and configuring log forwarding, I verified tha
 Search Query:
 EventCode=4625
 
-<img width="800" height="500" alt="splunk-4625-search-results" src="https://github.com/user-attachments/assets/df25e2a6-61a6-4f57-bcbc-1f73138f13ba" />
+<img width="850" height="500" alt="splunk-4625-search-results" src="https://github.com/user-attachments/assets/df25e2a6-61a6-4f57-bcbc-1f73138f13ba" />
 
 The events appeared in Splunk with the expected account name, source IP address, and logon type fields, confirming successful log collection and centralization.
+
+<img width="850" height="500" alt="splunk-event-details-4625" src="https://github.com/user-attachments/assets/4bae2335-5bc6-4b25-993f-c07d482b6861" />
 
 
 ### Key Event Details
