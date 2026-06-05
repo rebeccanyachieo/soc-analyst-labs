@@ -45,7 +45,7 @@ This project demonstrates SIEM deployment and administration, log collection and
 
 - [RDP Authentication Failure Analysis](https://github.com/rebeccanyachieo/soc-analyst-labs/tree/main/soc-investigations/rdp-failed-authentication-log-analysis)
 - Failed Login Investigation
-- User Creation Investigation
+- [User Creation Investigation](https://github.com/rebeccanyachieo/soc-analyst-labs/tree/main/soc-investigations/user-creation-investigation)
 - Privileged Logon Investigation
 
 ## Demonstration
