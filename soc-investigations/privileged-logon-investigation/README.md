@@ -18,7 +18,7 @@ A Windows Event ID 4672 event was located in the Windows Security log and then v
 
 Windows Security logs recorded Event ID 4672, indicating that special privileges were assigned during a logon session.
 
-<img width="851" height="600" alt="event-id-4672" src="https://github.com/user-attachments/assets/76e78c0c-b0fe-4258-8dfb-ed99a12c2fd8" />
+<img width="851" height="650" alt="event-id-4672" src="https://github.com/user-attachments/assets/76e78c0c-b0fe-4258-8dfb-ed99a12c2fd8" />
 
 # Splunk Verification
 
