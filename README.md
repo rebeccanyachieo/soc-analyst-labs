@@ -51,19 +51,6 @@ Each lab emphasizes:
 
 ## Lab Writeups
 
-Documented labs with focus on methodology, tools used, and key takeaways.
-
-### picoCTF
-|Lab|Topic|Skills|
-|---|---|---|
-|Phantom Intruder|Network Forensics|Wireshark, PCAP analysis, Base 64 decoding|
-|Server-Side Template Injection 1 (SSTI1) |Web Exploitation|BurpSuite, directory enumeration, SSTI detection and exploitation|
-
-### OverTheWire
-|Lab|Topic|Skills|
-|---|---|---|
-|Natas 8|Web exploitation|Source code review, encoding analysis|
-
-
+Documented labs with focus on methodology, tools used, and key takeaways in progress.
 
   
