@@ -52,7 +52,6 @@ The events appeared in Splunk with the expected account name, source IP address,
 
 <img width="850" height="550" alt="splunk-event-details-4625" src="https://github.com/user-attachments/assets/4bae2335-5bc6-4b25-993f-c07d482b6861" />
 
-
 ### Key Event Details
 
 - **Event ID:** 4625 (failed login)
@@ -81,22 +80,43 @@ The events appeared in Splunk with the expected account name, source IP address,
 
 ## Analysis
 
-The test condition was met: multiple failed login attempts from a single source IP were clearly observable in the logs and could be grouped within the defined time window.
+Multiple failed login attempts from a single source IP were clearly observable in the logs and groupable within the defined time window, meeting the initial test condition.
 
 Key observations:
 
-- Authentication failures are consistently recorded as Event ID 4625  
-- Source IP remains constant across related events  
-- Short time intervals between attempts make grouping straightforward  
-- Logon Type 3 reflects network-based authentication attempts prior to a full session being established  
+- Authentication failures are consistently recorded as Event ID 4625
+- Source IP remains constant across all related events
+- Short time intervals between attempts (14 seconds total across 6 
+  attempts) indicate automated or rapid manual credential guessing
+- Logon Type 3 reflects network-based authentication prior to a full 
+  session being established
 
-This validates that repeated authentication failures are both visible and measurable using standard Windows Security logs.
+Follow-on investigation of Event ID 4624 (successful logon) from the same source IP revealed successful authentication following the failed attempts. This escalates the severity of this finding from suspicious activity to likely credential compromise.
+
+A pattern of repeated failures followed by success from the same source is an indicator of a completed brute force or password 
+guessing attack.
 
 ---
-## MITRE ATT&CK Mapping
 
-Tactic: Credential Access
+## Recommended Response
+
+In a production environment, this finding would warrant:
+
+- Immediate isolation of the source IP pending investigation
+- Review of what the account accessed after the successful logon 
+  (Event ID 4663, 4656 for object access)
+- Determination of whether the credentials were legitimately known 
+  to that source or obtained through guessing
+- Escalation to Tier 2 if lateral movement or data access is 
+  observed post-logon
+
+---
+
+## MITRE ATT&CK Mapping
 
 | Technique | ID | Description |
 |---|---|---|
-| Brute Force (Password Guessing) | T1110.001 | Repeated authentication attempts against a valid account over RDP to identify correct credentials |
+| Brute Force: Password Guessing | T1110.001 | Repeated failed 
+authentication attempts followed by successful logon from the same 
+source IP, consistent with credential compromise via guessing |
+---
