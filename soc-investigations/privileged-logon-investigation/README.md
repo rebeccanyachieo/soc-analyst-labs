@@ -1,6 +1,6 @@
 # Overview
 
-Event ID 4672 is recorded when special privilges are assigned during a logon session. 
+Event ID 4672 is recorded when special privileges are assigned during a logon session. 
 
 In this lab environment, I investigated the event associated with the built-in SYSTEM account (NT AUTHORITY\SYSTEM) to show how Windows records privileged logon activity and elevated permissions.
 
