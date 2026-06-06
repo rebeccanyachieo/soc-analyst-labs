@@ -80,16 +80,14 @@ The events appeared in Splunk with the expected account name, source IP address,
 
 ## Analysis
 
-Multiple failed login attempts from a single source IP were clearly observable in the logs and groupable within the defined time window, meeting the initial test condition.
+Multiple failed login attempts from a single source IP were observable in the logs and groupable within the defined time window, meeting the initial test condition.
 
 Key observations:
 
 - Authentication failures are consistently recorded as Event ID 4625
 - Source IP remains constant across all related events
-- Short time intervals between attempts (14 seconds total across 6 
-  attempts) indicate automated or rapid manual credential guessing
-- Logon Type 3 reflects network-based authentication prior to a full 
-  session being established
+- Short time intervals between attempts (14 seconds total across 6 attempts) indicate automated or rapid manual credential guessing
+- Logon Type 3 reflects network-based authentication prior to a full session being established
 
 Follow-on investigation of Event ID 4624 (successful logon) from the same source IP revealed successful authentication following the failed attempts. This escalates the severity of this finding from suspicious activity to likely credential compromise.
 
