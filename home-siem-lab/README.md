@@ -39,7 +39,14 @@ This project demonstrates a home SIEM environment built with Splunk Enterprise, 
   
 ## Skills Demonstrated
 
-This project demonstrates SIEM deployment and administration, log collection and forwarding, Windows Security event analysis, security monitoring, investigation documentation, and the use of centralized logging to detect and investigate security-relevant activity.
+- Splunk Enterprise deployment and administration
+- Splunk Universal Forwarder configuration
+- Windows Security Event Log collection
+- Security event investigation and documentation
+- Event Viewer analysis
+- SPL search and log analysis
+- Log forwarding troubleshooting
+- Security monitoring in a home lab environment
 
 ## Investigations Performed
 
