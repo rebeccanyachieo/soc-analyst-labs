@@ -37,7 +37,8 @@ If a source IP generates ≥5 failed authentication attempts within a short time
 
 ## Evidence
 
-<img width="634" height="302" alt="rdp-failed-login" src="https://github.com/user-attachments/assets/7672b10c-d359-45a9-9e96-9201587ea0fe" />
+<img width="634" height="302" alt="event-viewer-4625" src="https://github.com/user-attachments/assets/402469f5-7ba9-4df7-91af-9fde89d7625e" />
+
 
 ## Verification in Splunk
 
@@ -56,7 +57,7 @@ The events appeared in Splunk with the expected account name, source IP address,
 
 - **Event ID:** 4625 (failed login)
 - **Account Name:** user
-- **Source Network Address:** 192.168.x.x (Kali VM)
+- **Source Network Address:** 192.168.56.101 (Kali VM)
 - **Logon Type:** 3 (network-based login attempt)
 - **Event Source:** Windows Security Log
 - **Platform:** Splunk Enterprise
@@ -67,16 +68,16 @@ The events appeared in Splunk with the expected account name, source IP address,
 - Same source IP across all events
 - Occurred within a short time window
 
-### Sample Events
+### Events
 
 | Time         | Event ID | Account | Source IP     | Logon Type |
 |--------------|----------|---------|---------------|------------|
-| 3:32:27 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:32:26 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:32:25 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:32:23 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:32:20 PM   | 4625     | user    | 192.168.x.x   | 3          |
-| 3:32:13 PM   | 4625     | user    | 192.168.x.x   | 3          |
+| 3:32:27 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:26 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:25 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:23 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:20 PM   | 4625     | user    | 192.168.56.101   | 3          |
+| 3:32:13 PM   | 4625     | user    | 192.168.56.101   | 3          |
 
 ## Analysis
 
