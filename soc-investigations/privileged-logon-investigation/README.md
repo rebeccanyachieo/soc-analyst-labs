@@ -30,6 +30,3 @@ The event successfully forwarded to Splunk, showing that privileged logon was be
 
 <img width="800" height="500" alt="splunk-4672-search-results" src="https://github.com/user-attachments/assets/8b4fc6b7-1097-445a-affd-7079227dfe4c" />
 
-# MITRE ATT&CK Mapping
-
-- T1078 - Valid Accounts
