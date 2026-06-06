@@ -56,7 +56,7 @@ The events appeared in Splunk with the expected account name, source IP address,
 ### Key Event Details
 
 - **Event ID:** 4625 (failed login)
-- **Account Name:** user
+- **Account Name:** kali
 - **Source Network Address:** 192.168.56.101 (Kali VM)
 - **Logon Type:** 3 (network-based login attempt)
 - **Event Source:** Windows Security Log
