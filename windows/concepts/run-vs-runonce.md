@@ -31,16 +31,7 @@ If a program is added to HKLM\Software\Microsoft\Windows\currentVersion\Run, it 
 
 A program added to a RunOnce key (HKCU or HKLM) will execute one time at the next login and then the registry entry is removed. 
 
-## One Takeaway
+## Takeaway
 
 Run and RunOnce registry keys control automatic program execution at login, and their location (HKCU vs HKLM) determines whether the behavior affects a single user or the entire system.
 
-## Key Takeways
-
-- Run executes programs at every login, while RunOnce executes only once
-- HKCU affects only the current user, while HKLM affects all users
-- Registry-based auto-start mechanisms are commonly used for both legitimate functionality and persistence
-- These keys exist in both user and system registry locations
-- They are commonly used for startup applications
-- Monitoring these keys can help detect persistence mechanisms
-- RunOnce achieves "run once" behavior by deleting registry entry after execution
