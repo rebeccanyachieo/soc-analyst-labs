@@ -27,6 +27,12 @@ The event was successfully forwarded to Splunk Enterprise, verifying that the ac
 
 <img width="800" height="600" alt="splunk-4720-search-results" src="https://github.com/user-attachments/assets/31363c59-9b1e-4598-89ce-3b18896750fd" />
 
+# Key Event Details
+
+- Account Name: testuser
+- Event Source: Windows Security Log
+- Platform: Splunk Enterprise
+
 
 # MITRE ATT&CK Mapping
 
