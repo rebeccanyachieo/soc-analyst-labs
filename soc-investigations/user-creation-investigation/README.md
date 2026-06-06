@@ -36,4 +36,4 @@ The event was successfully forwarded to Splunk Enterprise, verifying that the ac
 
 # MITRE ATT&CK Mapping
 
-- T1136 - Create Account
+- T1136.001 - Create Account
