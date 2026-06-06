@@ -113,9 +113,7 @@ In a production environment, this finding would warrant:
 
 ## MITRE ATT&CK Mapping
 
-| Technique | ID | Description |
-|---|---|---|
-| Brute Force: Password Guessing | T1110.001 | Repeated failed 
-authentication attempts followed by successful logon from the same 
-source IP, consistent with credential compromise via guessing |
----
+T1110.001 Brute Force: Password Guessing
+
+Repeated failed authentication attempts followed by successful logon from the same source IP, consistent with credential compromise via guessing 
+
