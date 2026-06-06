@@ -17,7 +17,7 @@ Windows Security logs recorded Event ID 4720, indicating that a new user account
 
 <img width="800" height="550" alt="event-id-4720" src="https://github.com/user-attachments/assets/77aba6c0-1c8a-4bb6-a7fc-64dedb62b14f" />
 
-# Verification in Splunk
+# Splunk Verification
 
 Search Query:
 
