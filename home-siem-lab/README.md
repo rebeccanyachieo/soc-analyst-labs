@@ -2,9 +2,11 @@
 
 ## Overview
 
-This project demonstrates a home SIEM environment built with Splunk Enterprise, Ubuntu Linux, Windows 10, and the Splunk Universal Forwarder. The lab was created to gain practical experience collecting, monitoring, and investigating Windows Security events.
+The lab was created to gain practical experience collecting, monitoring, and investigating Windows Security events.
 
 ## Architecture
+
+This project demonstrates a home SIEM environment built with Splunk Enterprise, Ubuntu Linux, Windows 10, and the Splunk Universal Forwarder.
 
 <img width="600" height="450" alt="soc-lab-diagram" src="https://github.com/user-attachments/assets/7e162a9d-4e5b-4877-83a2-1fab968fa207" />
 
@@ -14,7 +16,7 @@ This project demonstrates a home SIEM environment built with Splunk Enterprise, 
 * Splunk Enterprise
 * Splunk Universal Forwarder
 * Ubuntu Linux
-* Windows 11
+* Windows 10
 * Kali Linux
 * VirtualBox
 * Windows Event Viewer
@@ -22,7 +24,7 @@ This project demonstrates a home SIEM environment built with Splunk Enterprise, 
   
 ## Log Flow
 
-1. Security activity is generated on the Windows 11 endpoint.
+1. Security activity is generated on the Windows 10 endpoint.
 2. Windows records the activity in the Security Event Log.
 3. The Splunk Universal Forwarder collects the event.
 4. The event is forwarded to the Splunk Enterprise server running on Ubuntu.
