@@ -14,9 +14,10 @@ Small cybersecurity project using Shodan data to look at hosts with port 104 exp
 
 The results show which countries and organizations appeared most often in the dataset.
 
-![Results by Country](images/port104_results_by_country.png)
+<img width="713" height="457" alt="port104_results_by_country" src="https://github.com/user-attachments/assets/731d4267-f564-4287-823e-65425ab436a3" />
 
-![Top Organizations](images/port104_top_organizations.png)
+<img width="787" height="462" alt="port104_top_organizations" src="https://github.com/user-attachments/assets/bef16c67-00f6-4fcf-9d32-645cac227ce0" />
+
 
 ## Files
 
