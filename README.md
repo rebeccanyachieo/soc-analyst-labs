@@ -63,3 +63,9 @@ Explored geographic and organizational patterns while separating internet exposu
 ### Windows Security Monitoring Lab
 
 Generated and investigated Windows security events using Sysmon and Splunk, including failed logons and account activity.
+
+Copyright © 2026 Rebecca Nyachieo. All rights reserved.
+
+This repository is publicly available for portfolio and educational viewing purposes.
+No permission is granted to copy, modify, distribute, or commercially use the contents
+without prior written permission.
