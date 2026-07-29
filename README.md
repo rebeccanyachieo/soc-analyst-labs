@@ -13,34 +13,39 @@ Each lab emphasizes:
 
 ## Platforms
 
-- picoCTF
-- OverTheWire (Bandit / Natas)
-- HackTheBox Labs
 - Google Cybersecurity Professional Certificate Labs
 - Self-Created Labs
 
 ## Focus Areas
 
 - Log analysis  
-- Network traffic analysis  
-- Threat detection and investigation  
-- Malware investigation fundamentals  
-- Capture-the-flag (CTF) challenges
-  
-## Tools & Technologies
+- Security monitoring
+- Threat detection and investigation
+- Network traffic analysis
+- Security data analysis and visualization
+- Vulnerability and exposure analysis
 
+## Tools & Technologies
+- Python
+- pandas / matplotlib
+- Jupyter
+- Shodan
+- Splunk
+- Sysmon
 - Wireshark  
 - Burp Suite  
-- CyberChef  
-- SQL (MariaDB)  
-- Linux command line  
-- Windows command line  
-- Git / GitHub  
+- CyberChef
+- Docker
+- PostgreSQL / SQL
+- Linux
+- Windows
 
 ## Environments
 
-- Windows virtual machine  
-- Linux environments  
+- Kali Linux
+- Ubuntu Linux
+- Windows 11
+- Virtual machines
 
 ## Concepts Applied
 
@@ -49,8 +54,11 @@ Each lab emphasizes:
 - Process observation  
 - File system navigation  
 
-## Lab Writeups
+## Projects
 
-Documented labs with focus on methodology, tools used, and key takeaways in progress.
+### Shodan Port 104 Analysis
+Analyzed Shodan data for internet-exposed port 104 hosts using Python, pandas, Jupyter, and matplotlib. 
+Explored geographic and organizational patterns while separating internet exposure from evidence of vulnerability.
+
 
   
