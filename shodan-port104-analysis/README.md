@@ -1,6 +1,6 @@
 # Shodan Port 104 Analysis
 
-Small cybersecurity project using Shodan data to look at hosts with port 104 exposed. Port 104 is associated with DICOM, which is used by medical imaging systems.
+Small cybersecurity project using Shodan data to look at hosts with port 104 exposed. Port 104 is commonly associated with DICOM, which is used in medical imaging systems.
 
 ## What I did
 
