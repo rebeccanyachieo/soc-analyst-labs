@@ -60,5 +60,6 @@ Each lab emphasizes:
 Analyzed Shodan data for internet-exposed port 104 hosts using Python, pandas, Jupyter, and matplotlib. 
 Explored geographic and organizational patterns while separating internet exposure from evidence of vulnerability.
 
+### Windows Security Monitoring Lab
 
-  
+Generated and investigated Windows security events using Sysmon and Splunk, including failed logons and account activity.
